@@ -1,11 +1,11 @@
-# Welcome to your Jupyter Book
+# ChAMP
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+This is an interactive platform for learning about and engaging with the ChAMP system. Here you will find executable code, real-life non-identifiable data collected via the ChAMP system, educational resources to learn about childhood internalizing disorders, and information for how you can request access to the ChAMP app for research.
 
-Check out the content pages bundled with this sample book to see more.
+
+Check out [our website](https://jupyterbook.org) for more information.
+
+![full_logo](full_logo.png)
 
 ```{tableofcontents}
 ```
