@@ -5,7 +5,8 @@ This is an interactive platform for learning about and engaging with the ChAMP s
 
 Check out [our website](https://jupyterbook.org) for more information.
 
-```{image} (../images/full_logo.png)
+![](logo.png)
+
 
 ```{tableofcontents}
 ```
