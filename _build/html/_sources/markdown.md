@@ -1,11 +1,8 @@
-# Markdown Files
+# ChAMP Background
 
-Whether you write your book's content in Jupyter Notebooks (`.ipynb`) or
-in regular markdown files (`.md`), you'll write in the same flavor of markdown
-called **MyST Markdown**.
-This is a simple file to help you get started and show off some syntax.
+Add content here.
 
-## What is MyST?
+## What is ChAMP?
 
 MyST stands for "Markedly Structured Text". It
 is a slight variation on a flavor of markdown called "CommonMark" markdown,
@@ -14,7 +11,7 @@ in the Sphinx ecosystem.
 
 For more about MyST, see [the MyST Markdown Overview](https://jupyterbook.org/content/myst.html).
 
-## Sample Roles and Directives
+## How was ChAMP Started?
 
 Roles and directives are two of the most powerful tools in Jupyter Book. They
 are kind of like functions, but written in a markup language. They both
@@ -34,7 +31,7 @@ It will be rendered in a special box when you build your book.
 Here is an inline directive to refer to a document: {doc}`markdown-notebooks`.
 
 
-## Citations
+## Our Previous Work/Citations
 
 You can also cite references that are stored in a `bibtex` file. For example,
 the following syntax: `` {cite}`holdgraf_evidence_2014` `` will render like
@@ -49,7 +46,7 @@ then the bibliography is inserted with:
 ```{bibliography}
 ```
 
-## Learn more
+## Request Usage of the ChAMP System
 
 This is just a simple starter to get you started.
 You can learn a lot more at [jupyterbook.org](https://jupyterbook.org).

@@ -5,5 +5,5 @@ format: jb-book
 root: intro
 chapters:
 - file: champ_website_script
-#- file: markdown
+- file: markdown
 #- file: markdown-notebooks

@@ -1,8 +1,8 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: My sample book
-author: The Jupyter Book Community
+title: ChAMP: A Scalable Mental Health Screening App Using Mood Induction Tasks
+author: Bryn Loftness, Ellen McGinnis, and Ryan McGinnis
 logo: logo.png
 
 # Force re-execution of notebooks on each build.
@@ -30,3 +30,7 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
+
+
+launch_buttons:
+  colab_url: "https://colab.research.google.com/drive/1g6yjky4avTAsZMPUO4AFukOi75jci2DO?usp=sharing"

@@ -1,3 +1,11 @@
 jupyter-book
 matplotlib
 numpy
+pingouin
+ptitprince
+seaborn
+pandas
+scipy
+datetime
+re
+glob
