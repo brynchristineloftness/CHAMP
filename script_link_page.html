@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>ChAMP: Homepage &#8212; ChAMP, A Scalable Mental Health Screening App Using Mood Induction Tasks</title>
+    <title>Interactive Data Tutorial &#8212; ChAMP, A Scalable Mental Health Screening App Using Mood Induction Tasks</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,7 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Meet the ChAMP Team!" href="meet_the_team.html" />
+    <link rel="next" title="Digital Phenotyping of Childhood Internalizing Disorders" href="resources.html" />
+    <link rel="prev" title="ChAMP Background" href="champ_background.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -106,13 +107,13 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     ChAMP: Homepage
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="meet_the_team.html">
    Meet the ChAMP Team!
@@ -123,8 +124,8 @@ const thebe_selector_output = ".output, .cell_output"
    ChAMP Background
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="script_link_page.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Interactive Data Tutorial
   </a>
  </li>
@@ -184,6 +185,53 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/script_link_page.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://colab.research.google.com/drive/1g6yjky4avTAsZMPUO4AFukOi75jci2DO?usp=sharing/github/executablebooks/jupyter-book/blob/master/docs/script_link_page.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Colab"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_colab.png">
+  </span>
+<span class="headerbtn__text-container">Colab</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -223,7 +271,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fscript_link_page.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -251,7 +299,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/intro.md"
+        <a href="_sources/script_link_page.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -262,7 +310,7 @@ title="Download source file"
 <span class="headerbtn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="headerbtn__text-container">.md</span>
+<span class="headerbtn__text-container">.ipynb</span>
 </a>
 
       </li>
@@ -288,23 +336,88 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#welcome-to-the-champ-data-interactive-demo">
+   <em>
+    Welcome to the ChAMP Data Interactive Demo!
+   </em>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#herein-we-share-a-link-to-our-step-by-step-tutorial-for-analyzing-movement-data-extracted-using-the-champ-app">
+     Herein we share a link to our step-by-step tutorial for analyzing movement data extracted using the ChAMP app.
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#before-beginning-you-must-download-our-open-access-dataset-of-champ-data-or-collect-your-own-data-using-the-champ-mobile-application">
+     Before beginning, you must download our open-access dataset of ChAMP data or collect your own data using the ChAMP mobile application.
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>ChAMP: Homepage</h1>
+                <h1>Interactive Data Tutorial</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#welcome-to-the-champ-data-interactive-demo">
+   <em>
+    Welcome to the ChAMP Data Interactive Demo!
+   </em>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#herein-we-share-a-link-to-our-step-by-step-tutorial-for-analyzing-movement-data-extracted-using-the-champ-app">
+     Herein we share a link to our step-by-step tutorial for analyzing movement data extracted using the ChAMP app.
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#before-beginning-you-must-download-our-open-access-dataset-of-champ-data-or-collect-your-own-data-using-the-champ-mobile-application">
+     Before beginning, you must download our open-access dataset of ChAMP data or collect your own data using the ChAMP mobile application.
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -312,21 +425,23 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="champ-homepage">
-<h1>ChAMP: Homepage<a class="headerlink" href="#champ-homepage" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="interactive-data-tutorial">
+<h1>Interactive Data Tutorial<a class="headerlink" href="#interactive-data-tutorial" title="Permalink to this headline">#</a></h1>
+<section id="welcome-to-the-champ-data-interactive-demo">
+<h2><em>Welcome to the ChAMP Data Interactive Demo!</em><a class="headerlink" href="#welcome-to-the-champ-data-interactive-demo" title="Permalink to this headline">#</a></h2>
+<section id="herein-we-share-a-link-to-our-step-by-step-tutorial-for-analyzing-movement-data-extracted-using-the-champ-app">
+<h3>Herein we share a link to our step-by-step tutorial for analyzing movement data extracted using the ChAMP app.<a class="headerlink" href="#herein-we-share-a-link-to-our-step-by-step-tutorial-for-analyzing-movement-data-extracted-using-the-champ-app" title="Permalink to this headline">#</a></h3>
 <p><img alt="" src="_images/logo.png" /></p>
-<p>This is an interactive platform for learning about and engaging with the ChAMP system. Here you will find executable code, real-life non-identifiable data collected via the ChAMP system, educational resources to learn about childhood internalizing disorders, background on the platform, and information for how you can request access to the ChAMP app for research.</p>
-<p>To request download access for the ChAMP mobile application, please fill out <a class="reference external" href="https://forms.office.com/r/PEfwybkiAM">this form</a> or scan this QR code.</p>
+</section>
+<section id="before-beginning-you-must-download-our-open-access-dataset-of-champ-data-or-collect-your-own-data-using-the-champ-mobile-application">
+<h3>Before beginning, you must download our open-access dataset of ChAMP data or collect your own data using the ChAMP mobile application.<a class="headerlink" href="#before-beginning-you-must-download-our-open-access-dataset-of-champ-data-or-collect-your-own-data-using-the-champ-mobile-application" title="Permalink to this headline">#</a></h3>
+<p><em>need to add link:</em> To download the open access dataset already collected by our team, go <span class="xref myst">here</span>.</p>
+<p>To request download access for the ChAMP mobile application to collect your own dataset, please fill out <a class="reference external" href="https://forms.office.com/r/PEfwybkiAM">this form</a> or scan this QR code.</p>
 <img src="QR.png" width="200">
-<p>Want to access our interactive data processing script, get more information on digital phenotyping of childhood internalizing disorders, learn about the background of ChAMP, or read more about our team? Check out our other pages:</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="meet_the_team.html">Meet the ChAMP Team!</a></li>
-<li class="toctree-l1"><a class="reference internal" href="champ_background.html">ChAMP Background</a></li>
-<li class="toctree-l1"><a class="reference internal" href="script_link_page.html">Interactive Data Tutorial</a></li>
-<li class="toctree-l1"><a class="reference internal" href="resources.html">Digital Phenotyping of Childhood Internalizing Disorders</a></li>
-</ul>
-</div>
+<p>To access the script with step-by-step instructions, go <a class="reference external" href="https://colab.research.google.com/drive/1g6yjky4avTAsZMPUO4AFukOi75jci2DO">here</a> or click the rocket ship icon in the upper right corner of this page and select from the drop-down to open in Google Colab.</p>
+<p><strong>If you have any questions downloading the data or running this interactive script, please contact Bryn Loftness at <a class="reference external" href="mailto:bryn&#46;loftness&#37;&#52;&#48;uvm&#46;edu">bryn<span>&#46;</span>loftness<span>&#64;</span>uvm<span>&#46;</span>edu</a></strong>.</p>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -356,10 +471,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="meet_the_team.html" title="next page">
+    <a class='left-prev' id="prev-link" href="champ_background.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">ChAMP Background</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="resources.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Meet the ChAMP Team!</p>
+        <p class="prev-next-title">Digital Phenotyping of Childhood Internalizing Disorders</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
