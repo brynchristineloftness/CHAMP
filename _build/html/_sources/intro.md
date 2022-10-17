@@ -11,7 +11,7 @@ This is an interactive platform for learning about and engaging with the ChAMP s
 
 To request download access for the ChAMP mobile application, please fill out [this form](https://forms.office.com/r/PEfwybkiAM) or scan this QR code.
 
-```{image} ../images/QR.png
+```{image} QR.png
 :alt: QR code
 :class: bg-primary mb-1
 :width: 200px
