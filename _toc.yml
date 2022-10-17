@@ -4,6 +4,9 @@
 format: jb-book
 root: intro
 chapters:
-- file: champ_website_script
-- file: markdown
+- file: meet_the_team
+- file: champ_background
+- file: script_link_page
+- file: resources
+
 #- file: markdown-notebooks

@@ -52,7 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Interactive Data Tutorial" href="champ_website_script.html" />
+    <link rel="next" title="Interactive Data Tutorial" href="script_link_page.html" />
+    <link rel="prev" title="Meet the ChAMP Team!" href="meet_the_team.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -108,19 +109,29 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    ChAMP Homepage
+                    ChAMP: Homepage
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="champ_website_script.html">
-   Interactive Data Tutorial
+  <a class="reference internal" href="meet_the_team.html">
+   Meet the ChAMP Team!
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    ChAMP Background
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="script_link_page.html">
+   Interactive Data Tutorial
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="resources.html">
+   Digital Phenotyping of Childhood Internalizing Disorders
   </a>
  </li>
 </ul>
@@ -213,7 +224,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fmarkdown.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fchamp_background.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -241,7 +252,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/markdown.md"
+        <a href="_sources/champ_background.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -306,14 +317,16 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#how-was-champ-started">
-   How was ChAMP Started?
+  <a class="reference internal nav-link" href="#foundational-research-supporting-the-development-of-champ">
+   Foundational Research supporting the development of ChAMP
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#our-previous-work-citations">
-   Our Previous Work/Citations
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#primary-articles">
+     Primary Articles
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#request-usage-of-the-champ-system">
@@ -345,14 +358,16 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#how-was-champ-started">
-   How was ChAMP Started?
+  <a class="reference internal nav-link" href="#foundational-research-supporting-the-development-of-champ">
+   Foundational Research supporting the development of ChAMP
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#our-previous-work-citations">
-   Our Previous Work/Citations
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#primary-articles">
+     Primary Articles
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#request-usage-of-the-champ-system">
@@ -371,53 +386,36 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="champ-background">
 <h1>ChAMP Background<a class="headerlink" href="#champ-background" title="Permalink to this headline">#</a></h1>
-<p>Add content here.</p>
 <section id="what-is-champ">
 <h2>What is ChAMP?<a class="headerlink" href="#what-is-champ" title="Permalink to this headline">#</a></h2>
-<p>MyST stands for “Markedly Structured Text”. It
-is a slight variation on a flavor of markdown called “CommonMark” markdown,
-with small syntax extensions to allow you to write <strong>roles</strong> and <strong>directives</strong>
-in the Sphinx ecosystem.</p>
-<p>For more about MyST, see <a class="reference external" href="https://jupyterbook.org/content/myst.html">the MyST Markdown Overview</a>.</p>
+<p><em>Background:</em> Internalizing disorders, such as anxiety and depression, in pre-school aged children are common and often go undiagnosed into adulthood. Delayed intervention can increase risk for interpersonal impairments, substance abuse, and increased risk for suicide, thus, early identification is crucial. However, early subjective assessment of anxiety and depression present challenges as self-reports are not reliable in children younger than 8 years, and parental-reports often exhibit bias and poor sensitivity. Previously, we have presented an objective assessment demonstrating good accuracy (75%-81%) in identifying early childhood anxiety and depression which uses physiology (motion and audio) measured via wearable sensors during brief mood induction tasks. However, these methods required specialized equipment and expertise in data and sensor engineering to administer and analyze.</p>
+<p><em>Method:</em> To improve ecological validity, we have developed the ChAMP System, which includes an Android mobile application for collecting movement and audio data during mood induction tasks, a waist belt for attaching the phone to participants, and an open-source data analysis platform for extracting digital biomarkers and discovering digital phenotypes. As proof of principle, we  present data collected using the ChAMP System from 50 children ages 5-8, with and without anxiety or depressive disorders.</p>
+<p><em>Results:</em> Results indicate that several movement and audio-derived features significantly differ between diagnostic status groups and correlate with symptom severity. We provide a route for other researchers to request usage of the ChAMP System, lowering the barrier to entry for those interested in exploring digital phenotyping of childhood mental health but who may not have the background in signal processing or data science.</p>
+<p><em>Conclusions:</em> We aim to continue to build this scalable platform to aid in early identification of anxiety and depressive disorders in young children by crowd-sourcing validation efforts and making it accessible to researchers across domains and locations.</p>
 </section>
-<section id="how-was-champ-started">
-<h2>How was ChAMP Started?<a class="headerlink" href="#how-was-champ-started" title="Permalink to this headline">#</a></h2>
-<p>Roles and directives are two of the most powerful tools in Jupyter Book. They
-are kind of like functions, but written in a markup language. They both
-serve a similar purpose, but <strong>roles are written in one line</strong>, whereas
-<strong>directives span many lines</strong>. They both accept different kinds of inputs,
-and what they do with those inputs depends on the specific role or directive
-that is being called.</p>
-<p>Here is a “note” directive:</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Here is a note</p>
-</div>
-<p>It will be rendered in a special box when you build your book.</p>
-<p>Here is an inline directive to refer to a document: <a class="reference internal" href="markdown-notebooks.html"><span class="doc">Notebooks with MyST Markdown</span></a>.</p>
+<section id="foundational-research-supporting-the-development-of-champ">
+<h2>Foundational Research supporting the development of ChAMP<a class="headerlink" href="#foundational-research-supporting-the-development-of-champ" title="Permalink to this headline">#</a></h2>
+<section id="primary-articles">
+<h3>Primary Articles<a class="headerlink" href="#primary-articles" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://acamh.onlinelibrary.wiley.com/doi/10.1111/camh.12515">McGinnis EW, Copeland W, Shanahan L, Egger HL. Parental perception of mental health needs in young children [published online ahead of print, 2021 Oct 15]. Child Adolesc Ment Health. 2021;10.1111/camh.12515. doi:10.1111/camh.12515</a></p></li>
+<li><p><a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9227612/">McGinnis RS, McGinnis EW. Advancing Digital Medicine with Wearables in the Wild. Sensors (Basel). 2022;22(12):4576. Published 2022 Jun 17. doi:10.3390/s22124576</a></p></li>
+<li><p><a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8384142/">McGinnis EW, Scism J, Hruschak J, et al. Digital Phenotype for Childhood Internalizing Disorders: Less Positive Play and Promise for a Brief Assessment Battery. IEEE J Biomed Health Inform. 2021;25(8):3176-3184. doi:10.1109/JBHI.2021.3053846</a></p></li>
+<li><p><a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5918795/">McGinnis EW, McGinnis RS, Hruschak J, et al. Wearable sensors detect childhood internalizing disorders during mood induction task. PLoS One. 2018;13(4):e0195598. Published 2018 Apr 25. doi:10.1371/journal.pone.0195598</a></p></li>
+<li><p><a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6334916/">McGinnis RS, McGinnis EW, Hruschak J, et al. Rapid detection of internalizing diagnosis in young children enabled by wearable sensors and machine learning. PLoS One. 2019;14(1):e0210267. Published 2019 Jan 16. doi:10.1371/journal.pone.0210267</a></p></li>
+<li><p><a class="reference external" href="https://ieeexplore.ieee.org/document/8513327">McGinnis RS, McGinnis EW, Hruschak J, et al. Rapid Anxiety and Depression Diagnosis in Young Children Enabled by Wearable Sensors and Machine Learning. Annu Int Conf IEEE Eng Med Biol Soc. 2018;2018:3983-3986. doi:10.1109/EMBC.2018.8513327</a></p></li>
+<li><p><a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5326613/">McGinnis EW, McGinnis RS, Muzik M, et al. Movements Indicate Threat Response Phases in Children at Risk for Anxiety. IEEE J Biomed Health Inform. 2017;21(5):1460-1465. doi:10.1109/JBHI.2016.2603159</a></p></li>
+<li><p><a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7484854/">McGinnis EW, Anderau SP, Hruschak J, et al. Giving Voice to Vulnerable Children: Machine Learning Analysis of Speech Detects Anxiety and Depression in Early Childhood. IEEE J Biomed Health Inform. 2019;23(6):2294-2301. doi:10.1109/JBHI.2019.2913590</a></p></li>
+<li><p><a class="reference external" href="https://ieeexplore.ieee.org/document/9871090">Loftness BC, Halvorson-Phelan J, O’Leary A, Cheney N, McGinnis EW, McGinnis RS. UVM KID Study: Identifying Multimodal Features and Optimizing Wearable Instrumentation to Detect Child Anxiety. Annu Int Conf IEEE Eng Med Biol Soc. 2022;2022:1141-1144. doi:10.1109/EMBC48229.2022.9871090</a></p></li>
+<li><p><a class="reference external" href="https://dc.etsu.edu/etsu-works/7702/">McGinnis, Ellen; McGinnis, Ryan; Hruschak, Jessica; Bilek, Emily; Ip, Ka; Morelen, Diana; Lawler, Jamie; Fitzgerald, Kate; Rosenblum, Katherine; and Musik, Maria. 2018. Wearable Sensors Outperform Behavioral Coding as Valid Marker of Childhood Anxiety and Depression. PlosOne. Vol.13(4). https://doi.org/10.1371/journal.pone.0195598</a></p></li>
+<li><p><a class="reference external" href="https://mental.jmir.org/2016/2/e16/">Torous J, Kiang MV, Lorme J, Onnela JP. New Tools for New Research in Psychiatry: A Scalable and Customizable Platform to Empower Data Driven Smartphone Research. JMIR Ment Health. 2016;3(2):e16. Published 2016 May 5. doi:10.2196/mental.5165</a></p></li>
+</ul>
 </section>
-<section id="our-previous-work-citations">
-<h2>Our Previous Work/Citations<a class="headerlink" href="#our-previous-work-citations" title="Permalink to this headline">#</a></h2>
-<p>You can also cite references that are stored in a <code class="docutils literal notranslate"><span class="pre">bibtex</span></code> file. For example,
-the following syntax: <code class="docutils literal notranslate"><span class="pre">{cite}`holdgraf_evidence_2014`</span></code> will render like
-this: <span id="id1">[<a class="reference internal" href="#id3" title="Christopher Ramsay Holdgraf, Wendy de Heer, Brian N. Pasley, and Robert T. Knight. Evidence for Predictive Coding in Human Auditory Cortex. In International Conference on Cognitive Neuroscience. Brisbane, Australia, Australia, 2014. Frontiers in Neuroscience.">HdHPK14</a>]</span>.</p>
-<p>Moreover, you can insert a bibliography into your page with this syntax:
-The <code class="docutils literal notranslate"><span class="pre">{bibliography}</span></code> directive must be used for all the <code class="docutils literal notranslate"><span class="pre">{cite}</span></code> roles to
-render properly.
-For example, if the references for your book are stored in <code class="docutils literal notranslate"><span class="pre">references.bib</span></code>,
-then the bibliography is inserted with:</p>
-<div class="docutils container" id="id2">
-<dl class="citation">
-<dt class="label" id="id3"><span class="brackets"><a class="fn-backref" href="#id1">HdHPK14</a></span></dt>
-<dd><p>Christopher Ramsay Holdgraf, Wendy de Heer, Brian N. Pasley, and Robert T. Knight. Evidence for Predictive Coding in Human Auditory Cortex. In <em>International Conference on Cognitive Neuroscience</em>. Brisbane, Australia, Australia, 2014. Frontiers in Neuroscience.</p>
-</dd>
-</dl>
-</div>
 </section>
 <section id="request-usage-of-the-champ-system">
 <h2>Request Usage of the ChAMP System<a class="headerlink" href="#request-usage-of-the-champ-system" title="Permalink to this headline">#</a></h2>
-<p>This is just a simple starter to get you started.
-You can learn a lot more at <a class="reference external" href="https://jupyterbook.org">jupyterbook.org</a>.</p>
+<p>To request download access for the ChAMP mobile application, please fill out <a class="reference external" href="https://forms.office.com/r/PEfwybkiAM">this form</a> or scan this QR code.</p>
+<img src="QR.png" width="200">
 </section>
 </section>
 
@@ -448,12 +446,19 @@ You can learn a lot more at <a class="reference external" href="https://jupyterb
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="champ_website_script.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="meet_the_team.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Interactive Data Tutorial</p>
+            <p class="prev-next-title">Meet the ChAMP Team!</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="script_link_page.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Interactive Data Tutorial</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>

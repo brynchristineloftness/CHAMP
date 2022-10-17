@@ -1,7 +1,7 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: ChAMP: A Scalable Mental Health Screening App Using Mood Induction Tasks
+title: ChAMP, A Scalable Mental Health Screening App Using Mood Induction Tasks
 author: Bryn Loftness, Ellen McGinnis, and Ryan McGinnis
 logo: logo.png
 

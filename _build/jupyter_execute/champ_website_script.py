@@ -5,16 +5,35 @@
 
 # ## *Welcome to the ChAMP Data Interactive Demo!*
 # 
+# #### Herein we share a link to our step-by-step tutorial for analyzing movement data extracted using the ChAMP app. 
+# 
 # ![](logo.png)
 # 
-# #### Herein we share a step-by-step tutorial for analyzing movement data extracted using the ChAMP app. 
+# #### Before beginning, you must download our open-access dataset of ChAMP data or collect your own data using the ChAMP mobile application. 
+# 
+# To request download access for the ChAMP mobile application to collect your own dataset, please fill out [this form](https://forms.office.com/r/PEfwybkiAM) or scan this QR code.
+# ![](QR.png)
+# 
+# *need to add link:* To download the open access dataset already collected by our team, go [here](). 
+# 
+# ##### To begin, run each of the cells by hovering over the [  ] symbol under the header and clicking the play button that appears or click "Run All" in the Runtime tab.
 
 # ## Start Imports
 
 # In[1]:
 
 
-import pandas as pd
+get_ipython().system(' pip install ptitprince')
+get_ipython().system(' pip install pingouin')
+get_ipython().system(' pip install seaborn')
+get_ipython().system(' pip install pandas')
+get_ipython().system(' pip install scipy')
+get_ipython().system(' pip install datetime')
+get_ipython().system(' pip install re')
+get_ipython().system(' pip install matplotlib')
+get_ipython().system(' pip install numpy')
+get_ipython().system(' pip install glob')
+
 import glob
 import matplotlib.pyplot as plt
 import numpy as np
@@ -31,7 +50,7 @@ import pingouin as pg
 
 # ## Functions
 
-# In[2]:
+# In[17]:
 
 
 def find_magnitudes(name1,name2,name3,file):
@@ -187,8 +206,8 @@ def test_difference_KSADSgen(test_list,data_and_demographics):
                 plt.yticks(fontsize = 16)
                 plt.ylabel(list_item,fontsize = 15)
                 plt.xticks([-.1,.93],['Affected','Unaffected'],fontsize = 15)
-                ax.spines.right.set_visible(False)
-                ax.spines.top.set_visible(False)
+                #ax.spines.right.set_visible(False)
+                #ax.spines.top.set_visible(False)
                 plt.tick_params(
                     axis='x',          # changes apply to the x-axis
                     which='both',      # both major and minor ticks are affected
@@ -205,7 +224,19 @@ def test_difference_KSADSgen(test_list,data_and_demographics):
 
 # ## Start File Pulls
 
+# ### Mount the Sample KID Data or mount your own folder!
+
 # In[3]:
+
+
+from google.colab import drive
+drive.mount('/content/drive/')
+get_ipython().system("cd '/content/drive/MyDrive/CHAMP/data'")
+
+
+# ### Gather Data from Folder
+
+# In[5]:
 
 
 #declare needed lists
@@ -215,9 +246,9 @@ data_subjects = []
 action_subjects = []
 
 #pull in champ files
-for name in glob.glob("C:/Users/brync/Dropbox/PhD Courses/PhD Year 1/KID Project/CHAMP_website_data/data/*"):
+for name in glob.glob("/content/drive/MyDrive/CHAMP/data/*"):
     file_path = name
-    name = name.replace('C:/Users/brync/Dropbox/PhD Courses/PhD Year 1/KID Project/CHAMP_website_data/data','')
+    name = name.replace('/content/drive/MyDrive/CHAMP/data/','')
     if "actionLog" in name:
         name = name.replace('.actionLog.projectmHealth.csv','')
         remove = "\\real"
@@ -236,12 +267,14 @@ for name in glob.glob("C:/Users/brync/Dropbox/PhD Courses/PhD Year 1/KID Project
         data_subjects.append(data_subject)
 
 #pull in redcap file
-for name in glob.glob("C:/Users/brync/Dropbox/PhD Courses/PhD Year 1/KID Project/CHAMP_website_data/data/*"):
+for name in glob.glob("/content/drive/MyDrive/CHAMP/data/*"):
     if 'RedCapforBryn' in name:
         redcap  = pd.read_csv(name, header = 0, sep = ',')
 
 
-# In[4]:
+# ### Perform Data Cleaning on Subject ID's to Prep for Merge
+
+# In[6]:
 
 
 #remove leading zeros and 'S' from subject IDs
@@ -263,12 +296,12 @@ action_subjects = [ele.lstrip('0') for ele in B]
 redcap = redcap[redcap['childid'].isin(data_subjects)]
 
 
-# In[5]:
+# In[7]:
 
 
 new_action_files = []
 new_data_files = []
-for file in range(len(action_files)):
+for file in range(len(data_files)):
     converted_action_file = clean_actionlog(action_files[file])
     new_action_files.append(converted_action_file)
 
@@ -278,13 +311,15 @@ action_files = new_action_files
 data_files = new_data_files
 
 
-# In[6]:
+# In[8]:
 
 
 redcap = redcap[['childid','childageMonths','childageYears','childgender1','CBCLintGmax','KSADSintSX', 'KSADSintDX','Diagnosis']]
 
 
-# In[7]:
+# ### Merge Demographic Data and CHAMP Data
+
+# In[9]:
 
 
 holder_list_bubs = []
@@ -326,7 +361,7 @@ data_and_demographics = pd.merge(redcap,holder_frame_approach,how = 'left',on = 
 data_and_demographics = pd.merge(data_and_demographics,holder_frame_bubbs,how = 'left',on = 'childid')
 
 
-# In[8]:
+# In[10]:
 
 
 data_and_demographics['bubbles_gyro_timestamp'],data_and_demographics['bubbles_gyro'] = create_converted_timestamp('bubbles_gyro_timestamp','bubbles_gyro',data_and_demographics)
@@ -335,7 +370,9 @@ data_and_demographics['approach_gyro_timestamp'],data_and_demographics['approach
 data_and_demographics['approach_acc_timestamp'],data_and_demographics['approach_acc'] = create_converted_timestamp('approach_acc_timestamp','approach_acc',data_and_demographics)
 
 
-# In[9]:
+# ### Create Features
+
+# In[11]:
 
 
 gyro_data_list_0_5 = []
@@ -474,7 +511,7 @@ data_and_demographics['acc_timestamp_list_5_19'] = acc_timestamp_list_5_19
 data_and_demographics['acc_timestamp_list_19_25'] = acc_timestamp_list_19_25
 
 
-# In[10]:
+# In[12]:
 
 
 first_bubbles_gyro_data_list = []
@@ -639,7 +676,7 @@ data_and_demographics['eleven_bubbles_acc_timestamp'] = eleven_bubbles_acc_times
 data_and_demographics['twelve_bubbles_acc_timestamp'] = twelve_bubbles_acc_timestamp_list
 
 
-# In[11]:
+# In[13]:
 
 
 data_and_demographics['median_bubbles_acc_0-15'] = [np.median(x) for x in data_and_demographics['one_bubbles_acc_data']]
@@ -851,7 +888,7 @@ data_and_demographics['var_bubbles_gyro_150-165'] = [np.var(x) for x in data_and
 data_and_demographics['var_bubbles_gyro_165-180'] = [np.var(x) for x in data_and_demographics['twelve_bubbles_gyro_data']]
 
 
-# In[12]:
+# In[14]:
 
 
 data_and_demographics['gyro_data_list_0_5 median'] = [np.median(x) for x in data_and_demographics['gyro_data_list_0_5']]
@@ -1035,14 +1072,9 @@ data_and_demographics['acc_data_list_5_19 p75'] = [np.percentile(x,75) for x in 
 data_and_demographics['acc_data_list_19_25 p75'] = [np.percentile(x,75) for x in data_and_demographics['acc_data_list_19_25']]
 
 
-# In[13]:
+# ### Test for Significance in Group-Level Testing
 
-
-data_and_demographics = data_and_demographics[data_and_demographics['childageYears'] > 4]
-
-
-# In[14]:
-
+# In[18]:
 
 
 test_list = list(data_and_demographics.columns)
@@ -1062,7 +1094,9 @@ print(set(sig_list))
 print('-------------------------------------------')
 
 
-# In[15]:
+# ### Test for Correlative Significance
+
+# In[19]:
 
 
 new_data_and_demographics = data_and_demographics.copy()
