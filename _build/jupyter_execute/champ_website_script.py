@@ -8,11 +8,23 @@
 # #### Herein we share a link to our step-by-step tutorial for analyzing movement data extracted using the ChAMP app. 
 # 
 # ![](logo.png)
+# ```{image} ../images/logo.png
+# :alt: logo
+# :class: bg-primary mb-1
+# :width: 200px
+# :align: center
+# ```
 # 
 # #### Before beginning, you must download our open-access dataset of ChAMP data or collect your own data using the ChAMP mobile application. 
 # 
 # To request download access for the ChAMP mobile application to collect your own dataset, please fill out [this form](https://forms.office.com/r/PEfwybkiAM) or scan this QR code.
-# ![](QR.png)
+# 
+# ```{image} ../images/QR.png
+# :alt: QR code
+# :class: bg-primary mb-1
+# :width: 200px
+# :align: center
+# ```
 # 
 # *need to add link:* To download the open access dataset already collected by our team, go [here](). 
 # 

@@ -40,6 +40,11 @@
 
 To request download access for the ChAMP mobile application, please fill out [this form](https://forms.office.com/r/PEfwybkiAM) or scan this QR code.
 
-<img src="QR.png" width="200">
+```{image} ../images/QR.png
+:alt: QR code
+:class: bg-primary mb-1
+:width: 200px
+:align: center
+```
 
 
