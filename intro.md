@@ -1,4 +1,4 @@
-# ChAMP: Homepage
+# ChAMP Homepage
 
 ![](logo.png)
 
