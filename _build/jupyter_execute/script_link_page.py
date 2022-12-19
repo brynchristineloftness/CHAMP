@@ -7,7 +7,7 @@
 # 
 # #### Herein we share a link to our step-by-step tutorial for analyzing movement data extracted using the ChAMP app. 
 # 
-# ```{image} ../_images/CHAMP_system.png
+# ```{image} ../_images/logo.png
 # :alt: logo
 # :class: bg-primary mb-1
 # :width: 150px
