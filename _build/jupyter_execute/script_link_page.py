@@ -7,7 +7,7 @@
 # 
 # #### Herein we share a link to our step-by-step tutorial for analyzing movement data extracted using the ChAMP app. 
 # 
-# ```{image} ../images/logo.png
+# ```{image} ../logo.png
 # :alt: logo
 # :class: bg-primary mb-1
 # :width: 150px
@@ -20,7 +20,7 @@
 # 
 # To request download access for the ChAMP mobile application to collect your own dataset, please fill out [this form](https://forms.office.com/r/PEfwybkiAM) or scan this QR code.
 # 
-# ```{image} ../images/QR.png
+# ```{image} ../QR.png
 # :alt: QR code
 # :class: bg-primary mb-1
 # :width: 150px
